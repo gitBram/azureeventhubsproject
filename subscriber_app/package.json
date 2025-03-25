@@ -1,5 +1,8 @@
 {
   "name": "subscriber_app",
   "version": "0.1.0",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "@azure/event-hubs": "^5.12.2"
+  }
 }
