@@ -134,7 +134,7 @@ function App() {
     if (chosenDeviceId === null && deviceIds.length > 0){
       setChosenDeviceId(deviceIds[0]) // Set the first device ID as the default selected device
     }
-  }, [deviceIds]); 
+  }, [deviceIds, chosenDeviceId]); 
 
   return (
     <div className="App">

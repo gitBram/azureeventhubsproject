@@ -52,7 +52,7 @@ const Device = (args) => {
             "sienna",
             "peru"
         ];
-    });
+    }, []);
 
     useEffect(() => {
         // Function to simulate and send data to Azure Event Hub
