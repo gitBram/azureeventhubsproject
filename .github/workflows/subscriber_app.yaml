@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'subscriber_app/**'
+      - 'subscriber_app/frontend/**'
 
 jobs:
   build-and-deploy:
@@ -16,7 +16,7 @@ jobs:
 
       - name: Install and Build
         run: |
-          cd subscriber_app
+          cd subscriber_app/frontend
           npm install
           npm run build
 
@@ -25,4 +25,4 @@ jobs:
         with:
           app-name: "lwa-eh-subscriber-1"
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE_SUBSCRIBE_APP }}
-          package: "subscriber_app/build"
+          package: "subscriber_app/frontend/build"
