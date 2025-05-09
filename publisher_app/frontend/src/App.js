@@ -17,7 +17,7 @@ function App() {
   const removeDevice = () => {
     if (numDevices > 1) {
       setNumDevices(numDevices - 1);
-    }
+    } 
   }
   return (
     <AppContextProvider backendClient={backendClient}>
